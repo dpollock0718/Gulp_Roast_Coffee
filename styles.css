@@ -1,0 +1,250 @@
+.grid {
+    display: grid;
+    height: 600px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+      "header header header"
+      "navigation navigation navigation"
+      "title title title"
+      "colombia triple light"
+      "contactus contactus contactus"
+      "footer footer footer"
+      ;
+  }
+
+  
+  .header {
+    grid-area: header;
+  }
+  header{
+    background-color: #082B59;
+  }
+
+  .logo{
+    width: 150px;
+    padding-left: 50px;
+  }
+
+  nav{
+    background-color: #D98555;
+    height: 30px;
+    padding-right: 200px;
+    }
+  
+  .navBar {
+    padding-top: 5px;
+    font-family: lato, sans-serif;
+    padding-left: 30px;
+    float: right;
+  }
+  
+  .navstyle {
+    color: #F2F2F2;
+    text-decoration: none;
+  }
+  h2{
+    font-family: poppins, sans-serif;
+    color: #082B59;
+    padding-left: 50px;
+  }
+  
+  h3{
+    font-family: poppins, sans-serif;
+    color: #082B59;
+    font-size: 24;
+    padding-left: 50px;
+  }
+  
+  p{
+    font-family: lato, sans-serif;
+    font-size: 16px;
+    color: black;
+    padding-left: 50px;
+    padding-right: 100px;
+  }
+
+  .colombia {
+    grid-area: colombia;
+  }
+
+  .espresso {
+    padding-left: 120px;
+    width: 200px;
+  }
+  
+  .triple {
+    grid-area: triple;
+  }
+
+  .blend{
+    padding-left: 120px;
+    width: 200px;
+  }
+
+  .light{
+    grid-area:light;
+  }
+
+  .roast{
+    padding-left: 120px;
+    width: 200px;
+  }
+
+  .title {
+    grid-area: title;
+  }
+  .navigation {
+    grid-area: navigation;
+  }
+
+  .aboutgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  }
+  
+  .about {
+  }
+  
+  button{
+    background-color: #082B59;
+    font-family: poppins, sans-serif;
+    color: #F2F2F2;
+    margin-left: 50px;
+    margin-top: 50px;
+    padding: 10px;
+  }
+
+.coffeeview{
+  background-color: #082B59;
+  font-family: poppins, sans-serif;
+  color: #F2F2F2;
+  margin: 20px;
+  text-decoration:none;
+}
+
+  .contact {
+    color: #F2F2F2;
+    text-decoration: none;
+  }
+  
+  .image {
+    padding-top: 20px;
+  }
+  
+  h4{
+    padding-left: 20px;
+    font-family: DM Serif Text, sans-serif;
+    color: #59331D;
+  }
+  
+  footer{
+    background-color: #082B59;
+  }
+  
+  
+  .footerlinks {
+    color: #D98555;
+    text-decoration: none;
+  }
+  
+  .socialMedia {
+    display: inline-block;
+    font-family: lato, sans-serif;
+    padding-left: 50px;
+    color: #D98555;
+    padding-bottom: 50px;
+  }
+  
+  .copyRight {
+    font-family: lato, sans-serif;
+    color: White;
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+
+  .contactus{
+    grid-area: contactus;
+  }
+  
+  .footer{
+    grid-area: footer;
+  }
+  .content {
+    grid-area: content;
+  /*   display: grid; */
+  /*   grid-template-columns: 1fr 1fr 1fr; */
+  }
+
+  .gridsection{
+    margin: 0px 5%;
+    display: grid;
+    height: 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "drink menu pour";
+  }
+
+  .gridarea{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+  }
+
+  .heading{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    height: 25px;
+    color: white;
+    font-size: 18px;
+    font-family: poppins, sans-serif;
+    border-bottom: 5px solid #D98555;
+  }
+
+  #drink{
+    grid-area: drink;
+    background-image: url(images/gulp-drinking-coffee.jpg);
+  }
+
+  #menu{
+    grid-area: menu;
+    background-image: url(images/gulp-menu.jpg);
+  }
+
+  #pour{
+    grid-area: pour;
+    background-image: url(images/gulp-pouring-coffee-horizontal.jpg);
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+  .grid > div {
+  }
+
+  @media only screen and (max-width: 578px) {
+   .image{
+    display:flex;
+    flex-basis: 75%;
+   }
+  }
+  @media only screen and (max-width: 768px) {
+    .image{
+      display:flex;
+      flex-basis: 50%;
+     }
+    }
+  
+
+  @media only screen and (max-width: 992px) {
+    .image{
+      display:flex;
+      flex-basis: 25%;
+     }
+}
+
